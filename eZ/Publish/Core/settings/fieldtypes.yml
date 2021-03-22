@@ -538,6 +538,14 @@ services:
         tags:
             - {name: ezplatform.field_type, alias: ezimageasset}
 
+    eZ\Publish\Core\FieldType\DateInterval\Type:
+        autowire: true
+        autoconfigure: true
+        tags:
+            - {name: ezplatform.field_type, alias: ibexadateinterval}
+            - {name: ezplatform.field_type.form_mapper.value, fieldType: ibexadateinterval}
+            - {name: ezplatform.field_type.form_mapper.definition, fieldType: ibexadateinterval}
+
     ezpublish.fieldType.ezimageasset:
         alias: eZ\Publish\Core\FieldType\ImageAsset\Type
 

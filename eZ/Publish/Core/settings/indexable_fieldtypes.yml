@@ -125,6 +125,7 @@ services:
             - {name: ezplatform.field_type.indexable, alias: ezinisetting}
             - {name: ezplatform.field_type.indexable, alias: ezmatrix}
             - {name: ezplatform.field_type.indexable, alias: ezmultioption}
+            - {name: ezplatform.field_type.indexable, alias: ibexadateinterval}
             - {name: ezplatform.field_type.indexable, alias: ezmultioption2}
             - {name: ezplatform.field_type.indexable, alias: ezmultiprice}
             - {name: ezplatform.field_type.indexable, alias: ezoption}

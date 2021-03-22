@@ -512,3 +512,10 @@
     {% for attrname, attrvalue in attr %}{{ attrname }}="{{ attrvalue }}" {% endfor %}
 {% endapply %}
 {% endblock %}
+
+{% block ibexadateinterval_field %}
+    {% apply spaceless %}
+        {% set field_value = field.value.dateInterval|date('%y year, %m month, %d day') %}
+        {{ block( 'simple_block_field' ) }}
+    {% endapply %}
+{% endblock %}
